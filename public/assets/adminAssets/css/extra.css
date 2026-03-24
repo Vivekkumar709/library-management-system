@@ -1,0 +1,633 @@
+textarea.form-control {
+  border-radius: 10px;
+  border: 1px solid #E5ECFF;
+  font-size: 14px;
+  padding: 10px 25px;
+}
+/* For Section seapration */
+.section-divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: #6c757d;
+}
+.section-divider::before,
+.section-divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #bababf;
+  border-radius: 10px;
+}
+.section-divider::before {
+  margin-right: 1rem;
+}
+.section-divider::after {
+  margin-left: 1rem;
+}
+
+/* For button */
+.status-active {
+    background-color: #28a745;
+    color: white;
+}
+
+.status-inactive {
+    background-color: #dc3545;
+    color: white;
+}
+
+.status_btn:hover {
+    opacity: 0.8;
+}
+.status_btn1:hover {
+  opacity: 0.8;
+}
+.required-asterisk {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.required-asterisk::after {
+  content: "*";
+  color: #ff0000;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* For SELECT elements - Asterisk on LEFT */
+.select-required-asterisk {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.select-required-asterisk::before {  /* Using ::before instead of ::after */
+  content: "*";
+  color: #ff0000;
+  position: absolute;
+  left: 10px;    /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;    /* Ensures asterisk appears above the select */
+  pointer-events: none;
+}
+
+/* Adjust select padding to prevent text overlap */
+.select-required-asterisk .nice_Select2 {
+  padding-left: 20px !important; /* Give space for the asterisk */
+}
+
+.curvic-button {
+  background-color: #efeeee;     /* Blue background */
+  color: black;                  /* White text */
+  padding: 6px 13px;            /* Size */
+  border: 1px solid#666;                  /* No border */  
+  border-radius: 3px;           /* This creates the curved effect */
+  overflow: hidden;
+  font-size: 12px;               /* Font size */
+  cursor: pointer;               /* Pointer cursor on hover */
+  transition: background-color 0.3s ease;
+}
+.curvic-button:hover {
+  background-color: rgba(209, 209, 209, 0.614);     /* Darker blue on hover */
+  color: white;
+}
+
+/* =================== */
+select.nice_Select2 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  display: block !important;
+  opacity: 0 !important;
+}
+.nice-select {
+  display: inline-block !important;
+  width: 100% !important;
+}
+.nice-select .list {
+  display: none !important;
+  width: 100% !important;
+}
+.nice-select.open .list {
+  display: block !important;
+}
+.nice-select.error-field {
+  border: 1px solid red !important;
+}
+/* //+++++++++++++ */
+
+/* =================== FORM VALIDATION STYLES =================== */
+
+/* Basic validation states */
+.invalid { 
+    border: 2px solid #dc3545 !important; 
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25) !important;
+}
+
+.valid { 
+    border: 2px solid #28a745 !important; 
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+}
+
+/* Error message styling */
+.error-msg {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    font-weight: 500;
+}
+
+/* Form error alert styling */
+.form-error-alert {
+    margin-bottom: 1rem;
+    border-radius: 0.375rem;
+    padding: 0.75rem 1rem;
+}
+
+/* Error styling for nice-select dropdowns */
+.error-field {
+    border: 2px solid #dc3545 !important;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25) !important;
+}
+
+/* Error styling for input fields and textareas */
+.error-input {
+    border: 2px solid #dc3545 !important;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25) !important;
+}
+
+/* Focus styling for input fields and textareas */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Remove error styling when user starts typing */
+.form-control:focus.error-input {
+    border-color: #007bff !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+
+/* Input validation states */
+.form-control.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.form-control.is-valid {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Invalid feedback styling */
+.invalid-feedback {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #dc3545;
+}
+
+/* Valid feedback styling */
+.valid-feedback {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #28a745;
+}
+
+/* Select element focus styling */
+select.validate:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Nice-select validation states */
+.nice-select.invalid {
+    border: 2px solid #dc3545 !important;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25) !important;
+}
+
+.nice-select.valid {
+    border: 2px solid #28a745 !important;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+}
+
+/* Textarea validation */
+textarea.form-control.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+textarea.form-control.is-valid {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Date input validation */
+input[type="date"].form-control.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+input[type="date"].form-control.is-valid {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Email input validation */
+input[type="email"].form-control.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+input[type="email"].form-control.is-valid {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Number input validation */
+input[type="number"].form-control.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+input[type="number"].form-control.is-valid {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Required field indicator */
+.required-field::after {
+    content: " *";
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Animation for error states */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.error-input, .error-field {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Success animation */
+@keyframes success-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(40, 167, 69, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0); }
+}
+
+.form-control.is-valid {
+    animation: success-pulse 0.6s ease-out;
+}
+
+/* Disabled state styling */
+.form-control:disabled {
+    background-color: #e9ecef;
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+/* Readonly state styling */
+.form-control[readonly] {
+    background-color: #f8f9fa;
+    opacity: 1;
+}
+
+/* Custom validation icons (optional) */
+.form-control.is-valid {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.form-control.is-invalid {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.error-field {
+  border: 1px solid #dc3545 !important;
+  border-radius: 4px;
+}
+
+.nice-select.error-field .current {
+  color: #dc3545 !important;
+}
+
+.btn-font {
+  font-size: 12px;
+}
+
+.btn_popup {
+  background-color: rgb(136, 79, 251);
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(136, 79, 251);
+  border-image: initial;
+  padding: 9px 25px;
+  border-radius: 5px;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+
+.svg-preview {
+  max-width: 50px;
+  max-height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+/* .status_btn1 {
+  display: inline-block;
+  padding: 2px 15px;
+  font-size: 11px;
+  font-weight: 300;
+  color: #fff !important;
+  background: #dc3545;
+ // background: #05d34e; 
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  white-space: nowrap;
+  min-width: 70px;
+  text-align: center;
+} */
+
+.status_btn1 {
+  display: inline-block;
+  padding: 2px 15px;
+  font-size: 11px;
+  font-weight: 300;
+  color: #fff !important;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  white-space: nowrap;
+  min-width: 70px;
+  text-align: center;
+}
+
+/* Status-specific colors */
+.status_btn1.status-inactive {
+  background: #dc3545; /* Red for inactive */
+}
+
+.status_btn1.status-active {
+  background: #28a745; /* Green for active */
+}
+/* TOTAL NUMBERS OF RECORDS */
+.dataTables_length .total-records {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  font-size: 14px;
+}
+/* FOR USER TYPE ACCESS MODULES START */
+/* Custom Large Checkbox Styles */
+.large-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.menu-name {
+  min-width: 200px;
+  font-weight: 600;
+}
+.permission-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 12px 25px;
+}
+.white_card_body {
+  padding: 25px;
+}
+.submenu-row {
+  /* padding-left: 50px !important; */
+  padding-left: 155px !important; /* Increased indentation */
+  margin-top: 10px; /* Space above submenu */
+  background-color: #f9f9f9; /* Optional light background */
+  border-radius: 4px; /* Optional rounded corners */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .permission-row {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+  }
+  .submenu-row {           
+      padding-left: 50px !important;
+      margin-top: 8px;
+  }
+  .menu-name {
+      min-width: 100%;
+      margin: 10px 0;
+      order: -1;
+      font-size: 1.1rem;
+  }
+  .checkbox-label {
+      margin-right: 10px;
+      margin-bottom: 5px;
+  }
+  .large-checkbox {
+      width: 18px;
+      height: 18px;
+  }
+}
+/* FOR USER TYPE ACCESS MODULES END */
+
+.div-lable {   
+      color: #3179ad;
+      /* 6c757d */
+}
+/* select2 padding css */
+.select2-container--bootstrap-5 .select2-selection,
+.select2-container--bootstrap-5 .select2-selection--multiple {
+    border: 0.5px solid #e5ecff !important;
+    border-radius: 0.50rem !important;
+    font-size: 0.90rem !important;
+    padding: 0.63rem 1.25rem !important;
+}
+/* CSS FOR TOGGLE BUTTON START */
+.main-menu {
+  background-color: #f8f9fa !important;
+  font-weight: 600;
+}
+.sub-menu {
+  background-color: white;
+}
+.sub-menu td:first-child {
+  padding-left: 40px !important;
+  position: relative;
+}
+.sub-menu td:first-child:before {
+  content: "↳";
+  position: absolute;
+  left: 20px;
+  color: #6c757d;
+}
+.menu-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.toggle-submenu {
+  cursor: pointer;
+  margin-right: 8px;
+  display: inline-block;
+  width: 15px;
+  text-align: center;
+}
+.toggle-submenu:after {
+  content: "➕";
+}
+.toggle-submenu.collapsed:after {
+  content: "➖";
+}
+.badge {
+  font-size: 0.85em;
+  padding: 0.35em 0.65em;
+}
+tr.sub-menu {
+  display: none;
+} 
+/* CSS FOR TOGGLE BUTTON ENDED */
+/*  */
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* The tooltip text */
+.tooltip-wrapper::after {
+  content: attr(data-tooltip);   /* use custom attribute */
+  position: absolute;
+  bottom: 100%;                  /* show above input */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+/* Tooltip arrow */
+.tooltip-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* Show tooltip on hover/focus */
+/* .tooltip-wrapper:hover::after,
+.tooltip-wrapper:hover::before,
+.tooltip-wrapper:focus-within::after,
+.tooltip-wrapper:focus-within::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-4px);
+} */
+
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;  /* keep wrapper same size as select */
+  width: 100%;            /* optional: make it match select width */
+}
+
+.tooltip-wrapper select {
+  width: 100%;            /* fill the wrapper completely */
+}
+
+/* Tooltip */
+.tooltip-wrapper::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;           /* above the select */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f45b0f;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 9999;
+}
+
+/* Tooltip arrow */
+.tooltip-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #f45b0f transparent;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 9999;
+}
+
+/* Show tooltip on hover/focus */
+.tooltip-wrapper:hover::after,
+.tooltip-wrapper:hover::before,
+.tooltip-wrapper:focus-within::after,
+.tooltip-wrapper:focus-within::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-4px);
+}
+/*  */
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+.compact-dropdown {
+    padding: 0.25rem 0;
+}
+.compact-dropdown .dropdown-item {
+    margin-bottom: 0.25rem;
+}
+.compact-dropdown .dropdown-item.separated {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+/* Main toolbar styling - matches DataTables header */
+.dt-toolbar {
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  /* Filter elements */
+  .dt-filter {
+    margin-bottom: 0;
+  }
+  
+  .dt-filter-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 3px;
+  }
+  
+  .dt-filter-input {
+    font-size: 13px;
+    padding: 5px 10px;
+    height: 32px;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    background-color: white;
+    color: #333;
+    transition: border-color 0.15s;
+  }
+  
+  .dt-filter-input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  }
+  
+  /* Search box */
+  .dt-search input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+  }
+  
+  /* Buttons - matches DataTables button styling */
+  .dt-button {
+    font-size: 13px;
+    padding: 5px 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    transition: all 0.2s;
+    margin-left: 5px;
+  }
+  
+  .dt-button.btn-primary {
+    background-color: #2c3e50;
+    border-color: #2a3848;
+  }
+  
+  .dt-button.btn-primary:hover {
+    background-color: #1a252f;
+    border-color: #151e27;
+  }
+  
+  .dt-button.btn-secondary {
+    background-color: #95a5a6;
+    border-color: #8a9a9b;
+  }
+  
+  .dt-button.btn-secondary:hover {
+    background-color: #7f8c8d;
+    border-color: #748182;
+  }
+  
+  /* Icons */
+  .dt-icon {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dt-toolbar-footer > div {
+      margin-bottom: 10px;
+    }
+    
+    .dt-buttons {
+      margin-top: 5px;
+    }
+    
+    .dt-filter-input {
+      width: 100%;
+    }
+  }

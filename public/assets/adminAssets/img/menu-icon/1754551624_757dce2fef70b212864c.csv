@@ -1,0 +1,26 @@
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="13.775" height="16.438" viewBox="0 0 13.775 16.438">
+  <path d="M3 3.5h7.775a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2z" fill="#94c0d4"/>
+  <circle cx="4.5" cy="12.5" r="1.5" fill="#fff" stroke="#94c0d4" stroke-width="0.5"/>
+  <circle cx="9.775" cy="12.5" r="1.5" fill="#fff" stroke="#94c0d4" stroke-width="0.5"/>
+</svg> -->
+<svg xmlns="http://www.w3.org/2000/svg" width="13.775" height="16.438" viewBox="0 0 13.775 16.438">
+  <!-- Main Van Body -->
+  <path d="M12.275 4.5H1.5v7.438a2 2 0 0 0 2 2h7.775a2 2 0 0 0 2-2V4.5z" fill="#94c0d4"/>
+  
+  <!-- Front Cabin -->
+  <path d="M12.275 4.5V3a1.5 1.5 0 0 0-1.5-1.5H8.775V4.5h3.5z" fill="#94c0d4"/>
+  
+  <!-- Windows -->
+  <path d="M10.275 5.5H8.775V3.5h1.5z" fill="#fff" stroke="#94c0d4" stroke-width="0.5"/>
+  <path d="M3.775 5.5h4v4h-4z" fill="#fff" stroke="#94c0d4" stroke-width="0.5"/>
+  
+  <!-- Wheels -->
+  <circle cx="3.5" cy="13.438" r="1.5" fill="#fff" stroke="#94c0d4" stroke-width="0.5"/>
+  <circle cx="10.275" cy="13.438" r="1.5" fill="#fff" stroke="#94c0d4" stroke-width="0.5"/>
+  
+  <!-- Side Door -->
+  <path d="M5.275 5.5h2v4h-2z" fill="#94c0d4" fill-opacity="0.7" stroke="#94c0d4" stroke-width="0.25"/>
+  
+  <!-- Headlights -->
+  <path d="M12.275 6.5h1v1h-1z" fill="#fff" stroke="#94c0d4" stroke-width="0.25"/>
+</svg>

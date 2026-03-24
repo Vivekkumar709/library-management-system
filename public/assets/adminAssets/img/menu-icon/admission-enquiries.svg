@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.399" height="16.025" viewBox="0 0 16.399 16.025">
+  <g id="admission-enquiries-holo-v2" transform="translate(0 -36.652)">
+    <defs>
+      <!-- Rainbow Holo Gradient -->
+      <linearGradient id="rainbowHolo" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#4f46e5"/>
+        <stop offset="25%" stop-color="#6366f1"/>
+        <stop offset="50%" stop-color="#818cf8"/>
+        <stop offset="75%" stop-color="#6366f1"/>
+        <stop offset="100%" stop-color="#4f46e5"/>
+      </linearGradient>
+      
+      <!-- Shine Effect -->
+      <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+        <stop offset="40%" stop-color="#ffffff" stop-opacity="0.4"/>
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      </linearGradient>
+      
+      <!-- Glow Filter -->
+      <filter id="softGlow" height="300%" width="300%" x="-75%" y="-75%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" result="glow"/>
+        <feBlend in="SourceGraphic" in2="glow" mode="screen"/>
+      </filter>
+    </defs>
+    
+    <!-- Main Document with Rainbow Holo -->
+    <rect width="10" height="12" transform="translate(3.2 40.652)" fill="url(#rainbowHolo)" rx="1" filter="url(#softGlow)"/>
+    
+    <!-- Shine Overlay -->
+    <rect width="10" height="12" transform="translate(3.2 40.652)" fill="url(#shine)" rx="1" opacity="0.3"/>
+    
+    <!-- Metallic Clipboard Top -->
+    <rect width="12" height="1.5" transform="translate(2.2 39.152)" fill="#6366f1" rx="0.5" opacity="0.95"/>
+    
+    <!-- Bright Form Lines -->
+    <line x1="4.7" y1="42.652" x2="11.7" y2="42.652" stroke="#fff" stroke-width="0.9" opacity="0.95"/>
+    <line x1="4.7" y1="44.152" x2="10.2" y2="44.152" stroke="#fff" stroke-width="0.9" opacity="0.95"/>
+    <line x1="4.7" y1="45.652" x2="9.2" y2="45.652" stroke="#fff" stroke-width="0.9" opacity="0.95"/>
+    <line x1="4.7" y1="47.152" x2="11.7" y2="47.152" stroke="#fff" stroke-width="0.9" opacity="0.95"/>
+    <line x1="4.7" y1="48.652" x2="8.7" y2="48.652" stroke="#fff" stroke-width="0.9" opacity="0.95"/>
+    
+    <!-- Glowing Question Mark -->
+    <g filter="url(#softGlow)">
+      <path d="M8.2,50.652a1,1,0,1,1,1-1A1,1,0,0,1,8.2,50.652Zm0-1.5a0.5,0.5,0,0,0-.5.5v0.5a0.5,0.5,0,0,0,.5.5h0.5a0.5,0.5,0,0,0,.5-.5v-0.5A0.5,0.5,0,0,0,8.7,49.152Z" transform="translate(0 -36.652)" fill="#fff"/>
+    </g>
+    
+    <!-- Glowing Plus Sign -->
+    <g filter="url(#softGlow)">
+      <path d="M12.7,43.152h1.5v1.5H12.7Zm0.75-0.75v3h0" transform="translate(0 -36.652)" fill="none" stroke="#fff" stroke-width="1.1"/>
+    </g>
+    
+    <!-- Holo Sparkles -->
+    <circle cx="0.3" cy="0.3" r="0.3" transform="translate(2.8 39.8)" fill="#fff" opacity="0.8"/>
+    <circle cx="0.2" cy="0.2" r="0.2" transform="translate(14.2 41.2)" fill="#fff" opacity="0.7"/>
+    <circle cx="0.25" cy="0.25" r="0.25" transform="translate(5.8 50.8)" fill="#fff" opacity="0.9"/>
+  </g>
+</svg>

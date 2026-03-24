@@ -1,0 +1,503 @@
+remove unwanted code in footer file 
+apply access conditions on modules
+apply list link via controller thumbnails  
+bulk uploads
+
+https://chat.deepseek.com/a/chat/s/628ce7e4-f6a4-4468-8e5a-02e93e2d45f5
+
+view student details
+website only https and with www both should be run same
+
+how to add total in datatable
+
+apply access as per user and user type access and 
+remember me functionality
+apply notifications 
+thyro balance 
+
+Agenda for today
+
+1. mail server setup
+2. database setup for both motile and smart education era
+3. smart edu era project setup
+4. git hub link on smarteduera from local to server
+5. smart education era database connection in pg admin 10 in local from server
+
+https://mail.motileinfotech.com/
+https://mail.motileinfotech.com/installer/index.php?_step=3
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'Admin@123';
+UPDATE mysql.user SET password=PASSWORD('Admin@123') WHERE user='root';
+FLUSH PRIVILEGES;
+
+cyberpanel createEmail --domain motileinfotech.com --userName test --password testpassword123
+https://chat.deepseek.com/a/chat/s/a5af7a06-7e37-48e4-a03d-a2520e9a6ddc
+
+https://chat.deepseek.com/a/chat/s/a5af7a06-7e37-48e4-a03d-a2520e9a6ddc
+
+
+/home/motileinfotech.com/mail.motileinfotech.com/skins/elastic/images
+
+TO UPLOAD PHOTO FROM LOCAL SYSTEM TO SERVER
+
+scp logo.svg root@147.79.68.249:/home/motileinfotech.com/mail.motileinfotech.com/skins/elastic/images/logo.svg
+PTR
+srv1086166.hstgr.cloud 
+
+
+echo "Test to Yahoo at $(date)" | mail -s "PTR Test" your-test-email@yahoo.com
+echo "Test to Outlook at $(date)" | mail -s "PTR Test" your-test-email@outlook.com
+
+sudo apt install swaks
+swaks --to aditiguptanew91@gmail.com --from aditi@motileinfotech.com --server localhost
+swaks --to admin@motileinfotech.com --from aditi@motileinfotech.com --server localhost --port 587 -tls -au aditi@motileinfotech.com -ap motileAditi@25
+
+echo "Test email" | swaks --to aditi@motileinfotech.com --from admin@motileinfotech.com --server motileinfotech.com --port 25
+
+https://chat.deepseek.com/a/chat/s/9b51e37d-b1f5-4355-a07c-c4e0910ebdfe
+https://chat.deepseek.com/a/chat/s/9b51e37d-b1f5-4355-a07c-c4e0910ebdfe
+
+https://chat.deepseek.com/a/chat/s/43b9216d-7b34-40af-883f-86aae1f4f98b
+https://chat.deepseek.com/a/chat/s/43b9216d-7b34-40af-883f-86aae1f4f98b
+
+SMTP Error (): Authentication failed.
+SMTP Error (): Authentication failed.
+SMTP Error (535): Authentication failed.
+nano /home/motileinfotech.com/mail.motileinfotech.com/config/config.inc.php
+cat /home/motileinfotech.com/mail.motileinfotech.com/config/config.inc.php
+
+nano /etc/postfix/master.cf
+nano /etc/postfix/main.cf
+cp /etc/postfix/master.cf /etc/postfix/master.cf.backup
+
+SMTP Error (530): Failed to set sender "aditi@motileinfotech.com" (5.7.0 Must issue a STARTTLS command first).
+
+swaks --to aditiguptanew91@gmail.com --from aditi@motileinfotech.com --server localhost --port 25 -a -au aditi@motileinfotech.com -p YOUR_PASSWORD --body "Test external email delivery"
+
+
+swaks --to admin@motileinfotech.com \
+      --from aditi@motileinfotech.com \
+      --server localhost \
+      --port 587 \
+      -tls \
+      --auth PLAIN \
+      --auth-user aditi@motileinfotech.com \
+      --auth-password 'motileAditi@25' \
+      --body "Test authentication"  
+	  
+	  
+	  edu era setup
+	  
+	  
+	  https://chat.deepseek.com/a/chat/s/cddd24f1-a404-41a5-8e9d-a6c5fe6dc33c
+	  
+	  https://chat.deepseek.com/a/chat/s/7fb2d5b4-a20b-4fb5-8de4-a1ef7af88e65
+	  
+	  https://www.dainfra.in/index.php
+	  
+	  https://preview.themeforest.net/item/axial-construction-company-website-template/full_screen_preview/34584396
+	  https://preview.themeforest.net/item/castro-react-construction-template/full_screen_preview/23902821
+	  https://www.madebydesignesia.com/themes/buildpro/index.html
+	  https://www.madebydesignesia.com/themes/buildpro/index-14.html
+	  
+	  https://demo.awaikenthemes.com/landing/builtup/
+	  
+	  https://demo.awaikenthemes.com/builtup/
+	  https://demo.awaikenthemes.com/builtup/home-video/
+	  
+	  https://themewagon.github.io/Industrio/index.html
+	  https://themewagon.github.io/Sailor/portfolio.html
+	  https://castro.jamstacktemplates.dev/home-one
+	  
+	  
+	  https://www.sliderrevolution.com/templates/app-studio-website/ niceee
+	  
+	  rgb(126 130 133);
+	  rgb(40 77 120);
+	  
+	  systemctl restart lsws
+	  # ADD EXTRA HEADERS SECTION HERE
+extraHeaders <<<END_extraHeaders
+Content-Security-Policy: default-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self'; frame-src 'self';
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+END_extraHeaders
+
+
+root@mail:~# nano /usr/local/lsws/conf/vhosts/motileinfotech.com/vhconf.conf
+root@mail:~# systemctl restart lsws
+rewrite  {
+  enable                  1
+  autoLoadHtaccess        1
+  logLevel                0
+}
+
+motile contact page bottom colour code changes
+
+84.32.84.32
+website content change 
+profile page error resolve and motile contact us page corrections
+contact us page check data send to the server or not
+https://www.smarteduera.cloud/
+#ff4a17
+#ff4a17
+FTP is not connecting to the server
+smart_education_era_brochure_OLDD.pdf
+
+https://www.youtube.com/channel/UC7tjcOcLofxb4fy58Wupo-A
+
+Study Centers ERP
+Dynamic Website for Study Centers
+Bulk SMS Solution
+
+
+Student Record fa fa-address-book
+Faculty Record fa fa-address-book
+Fee Management fa fa-money
+Bulk SMS Solution
+Transport fa fa-bus
+Report Card fa fa-book
+Event Management fa fa-calendar
+Hostel fa fa-bed
+Attendance fa fa-mobile
+Library fa fa-pencil-square-o
+Expense Module fa fa-money
+Fee Reports fa fa-edit
+Enquiry for Admission fa fa-desktop
+Permission Control fa fa-desktop
+Other Services fa fa-globe
+
+update about us on linked in profile so that i can invite people to follow the page 
+
+adduser username
+
+
+
+Technical details
+SmtpSubmissionPermanent5XXException: Smtp submission failed. Server 'mail.motileinfotech.com' 
+Port '465'. --> Unexpected SMTP server response. Expected: 334, actual: 535, whole response: 535 5.7.8 
+Error: authentication failed: Invalid authentication mechanism
+ 
+Failure code: 1d2e
+
+Technical details
+SmtpSubmissionPermanent5XXException: Smtp submission failed. Server 'mail.motileinfotech.com' 
+Port '587'. --> Unexpected SMTP server response. Expected: 334, actual: 535, whole response: 535 5.7.8 
+Error: authentication failed: Invalid authentication mechanism
+ 
+Failure code: 1d2e
+
+Technical details
+SmtpSubmissionPermanent5XXException: Smtp submission failed. Server 'mail.motileinfotech.com' 
+Port '587'. --> Unexpected SMTP server response. Expected: 334, actual: 535, whole response: 
+535 5.7.8 Error: authentication failed: Invalid authentication mechanism
+ 
+Failure code: 1d2e
+
+1460
+
+#fbf6ee
+#f7ecde
+
+
+dark
+#cd9036
+#d19947
+
+dark
+#324ef7
+
+light
+#324ef7
+
+old 
+dark
+#c48d76
+light
+#f1e7da
+
+
+#f7ecde51
+#cd90361a
+#324ef724
+
+#e6f5ff;; /*test backgroud*/
+
+
+https://www.grinfra.com/
+https://www.grinfra.com/wp-content/uploads/2022/12/GR-Infra-Brochure.pdf
+C:\XAMPP\htdocs\rninfra\rninfra\rnindia.co.in\public\uploads\project\dron-job-video.mp4
+
+file:///C:/XAMPP/htdocs/rninfra/rninfra/rnindia.co.in/public/frontend/assets/img/logo/rn-india-white.png
+
+logonew
+
+https://www.linkedin.com/search/results/all/?keywords=DA%20Infracon%20Pvt%20Ltd&origin=TYPEAHEAD_ESCAPE_HATCH&sid=PVC
+
+https://www.linkedin.com/search/results/all/?keywords=DA%20Infracon%20Pvt%20Ltd&sid=ayY
+
+mudel setup board lms
+
+#d08a73 
+replace 
+#cd9036
+//==============
+#cd9036
+
+light #fbf7f0
+#d08a73 TO #d09640
+
+#ba8f78 
+#ba8f78 to #016396
+#efe7da to #fbf7f0
+#d08a73 to #cd9036
+
+background-color: rgba(216, 118, 118, 0.836);
+background-color: rgba(1, 99, 150, 0.836);
+
+from #f1e7da  to #fbf7f0
+
+to #016396
+
+header footer seapration
+ci change
+images resize
+content change
+
+
+find #016396 and replace #256475 
+
+528 740
+
+business presentation for infrastructure like bridges and roads
+
+fevicon icon
+header dynamic routing 
+create pages about, services, contact, projects,
+about page fonts changes
+images fixing
+
+1. Fabrication of Pier & Pier Cap Mould For Bullet Train Mumbai - Ahmedabad
+fabrication-of-pier-pier-cap-mould-for-bullet-train-mumbai-ahmedabad
+project_fabrication_of_pier_pier_cap_mould_for_bullet_train_mumbai_ahmedabad
+project_fabrication-of-pier-pier-cap-mould-for-bullet-train-mumbai-ahmedabad.php
+
+2. Fabrication of Segment Mould
+fabrication-of-segment-mould
+project_fabrication_of_segment_mould moti3238 adit3238 CA0000000135479 348 × 232
+project_fabrication-of-segment-mould.php CA0000000135479 186332 
+
+3. Fabrication of Segmental Mould for Gangapath - Bihar
+fabrication-of-segmental-mould-for-gangapath-Bihar
+project_fabrication_of_segmental_mould_for_gangapath_Bihar
+project_fabrication-of-segmental-mould-for-gangapath-Bihar.php
+
+
+4. Fabrication of Pier Mould and I-Girder Launching Beam
+fabrication-of-pier-mould-and-I-Girder-launching-beam
+project_fabrication_of_pier_mould_and_I_Girder_launching_beam
+project_fabrication-of-pier-mould-and-I-Girder-launching-beam.php
+
+
+5. Fabrication & Rectification of Segmental Moulds at L&T PKG-3, Delhi
+fabrication-and-rectification-of-segmental-moulds-at-L-and-T-PKG-3-Delhi
+project_fabrication_and_rectification_of_segmental_moulds_at_L_and_T_PKG_3_Delhi
+project_fabrication-and-rectification-of-segmental-moulds-at-L-and-T-PKG-3-Delhi.php
+
+6. Fabrication of Pier & Pier Cap Moulds For RRTS Meerut Project
+fabrication-of-pier-and-pier-cap-moulds-for-RRTS-meerut-project
+project_fabrication_of_pier_and_pier_cap_moulds_for_RRTS_meerut_project
+project_fabrication-of-pier-and-pier-cap-moulds-for-RRTS-meerut-project.php
+
+
+7. Fabrication of Skywalk at BJ Marg, New Delhi
+fabrication-of-skywalk-at-BJ-marg-new-delhi
+project_fabrication_of_skywalk_at_BJ_marg_new_delhi
+project_fabrication-of-skywalk-at-BJ-marg-new-delhi.php
+
+
+8. Fabrication of Foot Over Bridge at Aligarh-Kanpur Highway, Gopi, Aligarh, U.P.
+fabrication-of-foot-over-bridge-at-aligarh-kanpur-highway-gopi-aligarh-UP
+project_fabrication_of_foot_over_bridge_at_aligarh_kanpur_highway_gopi_aligarh_UP
+project_fabrication-of-foot-over-bridge-at-aligarh-kanpur-highway-gopi-aligarh-UP.php
+
+9. Fabrication of Foot Over Bridge at Aashram, New Delhi
+fabrication-of-foot-over-bridge-at-aashram-new-delhi
+project_fabrication_of_foot_over_bridge_at_aashram_new_delhi
+project_fabrication-of-foot-over-bridge-at-aashram-new-delhi.php
+
+10. Fabrication of Segmental Mould for Gangapath - Bihar
+fabrication-of-segmental-mould-for-gangapath-bihar
+project_fabrication_of_segmental_mould_for_gangapath_bihar
+project_fabrication-of-segmental-mould-for-gangapath-bihar.php
+
+
+11. Fabrication of MS Structure of Underpass Covering at Ashram Chowk, New Delhi
+fabrication-of-MS-structure-of-underpass-covering-at-ashram-chowk-new-delhi
+project_fabrication_of_MS_structure_of_underpass_covering_at_ashram_chowk_new_delhi
+project_fabrication-of-MS-structure-of-underpass-covering-at-ashram-chowk-new-delhi.php
+
+12. Fabrication of Steel Girder
+fabrication-of-steel-girder
+project_fabrication_of_steel_girder
+project_fabrication-of-steel-girder.php
+
+13. Fabrication of Bowstring Bridge
+fabrication-of-bowstring-bridge
+project_fabrication_of_bowstring_bridge
+project_fabrication-of-bowstring-bridge.php
+
+
+Key Projects – Ongoing
+
+Fabrication and Erection of Bowstring Bridge at Sharda Canal Shahjahanpur
+Construction of Bridge over Betwa River, Parsani, Hamirpur
+Development of Casting yard and casting of Segment, Parsani, Hamirpur
+Erection and Operation of Launcher over Betwa River Hamirpur
+Construction of Bridge over Yamuna River,  Auriya
+Development of Casting yard and casting of Segment in Auriya
+Erection and Operation of Launcher over Yamuna River Hamirpur
+Development of WSA Facility Food Plaza, Trauma Center, Unnao
+
+1	Fabrication and Erection of Bowstring Bridge at Sharda Canal Shahjahanpur-Anil Asso (UPSBC)
+2	Construction of Bridge over Betwa River, Parsani, Hamirpur-The Shelter (UPSBC)
+3	Development of Casting yard and casting of Segment, Parsani, Hamirpur-The Shelter (UPSBC)
+4	Erection and Operation of Launcher over Betwa River Hamirpur-PNA (UPSBC)
+5	Construction of Bridge over Yamuna River,  Auriya-The Shelter (UPSBC)
+6	Development of Casting yard and casting of Segment in Auriya-The Shelter (UPSBC)
+7	Erection and Operation of Launcher over Yamuna River Hamirpur-PNA (UPSBC)
+8	Development of WSA Facility Food Plaza, Trauma Center, Unnao-Patel Infra (UPEIDA)
+
+
+
+colour theam 
+footer links
+about and services fonts
+project category
+home page bottom projects listing 
+about us page detailed pages
+gallery
+
+jeff.ns.cloudflare.com
+tess.ns.cloudflare.com
+
+Structural Execution Expertise
+services.php?services=structural-execution-expertis
+
+Permanent Structure Design
+services.php?services=permanent-structure-design
+
+Construction Consultancy
+services.php?services=construction-consultancy
+
+Steel Fabrication Expertise
+services.php?services=steel-fabrication-expertise
+
+Electrical Design and Execution
+services.php?services=electrical-design-execution
+
+Temporary Structure Design
+services.php?services=temporary-structure-design
+
+
+https://ekaasha.com/
+
+
+What we have done today
+1.Home page about us correction.
+2.Services page correction.
+3.Our Journey page added
+4.management page corrections
+5.board of members page corrections
+6.About us page correction
+7.Footer correction and add company logo
+8.remove clients logo section
+Please check these changes and i wants these things for the website 
+
+1. key members 
+2. Social media links(company and team members)
+3. images of team members to show in management tree
+4. terms of services
+5. Privacy Policy
+6. office google map address link
+7. segrigate images as per services
+8. portfolio page content and images.
+
+
+project detailing page 
+
+https://chatgpt.com/c/69653037-f6cc-8323-aae6-a7658231489d
+
+adduser adminuser
+usermod -aG sudo adminuser
+id adminuser
+#494f58a8
+
+adiririr@vddgdgd.com
+
+Error: {"status":"error","message":"Name is required
+Email is required
+Subject is required
+Message is required"}
+
+Error: {"status":"success","message":"Thank you! Your message has been sent successfully. We will get back to you soon."}
+Thank you! Your message has been sent successfully. We will get back to you soon.
+
+
+<div class="error-message" style="display: none;"></div>
+<div class="error-message d-block" style="display: block;">Error: {"status":"error","message":"Name is required<br>Email is required<br>Subject is required<br>Message is required"}</div>
+<div class="error-message d-block" style="display: none;">Error: {"status":"success","message":"Thank you! Your message has been sent successfully. We will get back to you soon."}</div>
+
+https://chat.deepseek.com/a/chat/s/627310e6-e99f-4cb6-a45c-01f52a1509f2
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'root_password';
+
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('root_password');
+
+UPDATE mysql.user SET plugin='mysql_native_password' WHERE User='root';
+
+UPDATE user SET authentication_string = PASSWORD('root_password'), plugin = 'mysql_native_password' WHERE User = 'root' AND Host = 'localhost';
+
+
+https://chat.deepseek.com/a/chat/s/cfa18341-d7d1-4588-bd04-89d660a54053
+
+SELECT * FROM public.auth_remember_tokens
+ORDER BY id ASC 
+
+
+Warning: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: 
+Connection timed out (0x0000274C/10060) Is the server running on host "147.79.68.249" and accepting TCP/IP 
+Connection failed: Failed to connect to database
+
+https://grok.com/share/c2hhcmQtMw_31a7ea18-4557-45c5-8193-0d97aac719d7?rid=56377822-4c04-4f16-b7a3-6a5a55549b67
+https://grok.com/c/925cc195-442a-49ec-8c98-bbad5d14da97?rid=87f46dda-6d97-413c-88b8-f58f8dcc2f9d
+
+https://grok.com/c/d52737d4-6447-447a-bdff-d48031fcbe72?rid=ef10060c-c7df-4d94-b89e-cdd27f5666c1
+
+Role-Based Access Control (RBAC) is a security method that restricts system access to authorized 
+users based on their specific job roles, rather than individual permissions. It streamlines 
+IT administration by grouping permissions into roles (e.g., admin, editor, viewer), reducing 
+unauthorized access and enhancing security. 
+
+
+<a class="has-arrow" href="#" aria-expanded="false">
+	<div class="nav_icon_small">                    
+		 <img src="<?= base_url('assets/adminAssets/img/menu-icon/transport.svg') ?>" alt="">
+		 <i class="ti-car" style="color: #94c0d4 !important; font-size: 18px !important;"></i> 						
+	</div>
+	<div class="nav_title">
+		<span>Transport Management</span>
+	</div>
+</a>
+
+http://localhost:8080/assets/adminAssets/img/menu-icon/1772784611_0e6fb8d9b84676d8d466.csv
+
+
+
+
+
+
+
+
+
+	  

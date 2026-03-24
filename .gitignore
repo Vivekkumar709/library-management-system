@@ -1,18 +1,84 @@
-*/config/development
-*/logs/log-*.php
-!*/logs/index.html
+#-------------------------
+# Environment Files
+#-------------------------
+.env
+.vagrant
+Vagrantfile
+
+#-------------------------
+# CodeIgniter 4 Writable
+#-------------------------
+writable/cache/*
+!writable/cache/index.html
+
+writable/logs/*
+!writable/logs/index.html
+
+writable/session/*
+!writable/session/index.html
+
+writable/uploads/*
+!writable/uploads/index.html
+
+writable/debugbar/*
+!writable/debugbar/.gitkeep
+
+#-------------------------
+# System Cache (CI default)
+#-------------------------
 */cache/*
 !system/cache/*
 !*/cache/index.html
 !*/cache/.htaccess
 
+#-------------------------
+# Logs
+#-------------------------
+*/logs/log-*.php
+!*/logs/index.html
+
+#-------------------------
+# Composer
+#-------------------------
+vendor/
+
+#-------------------------
+# OS Files
+#-------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+#-------------------------
+# IDE Files
+#-------------------------
+.vscode/
+.idea/
+*.iml
+
+#-------------------------
+# Testing
+#-------------------------
+tests/coverage*
+phpunit
+/phpunit*.xml
+
+#-------------------------
+# Misc
+#-------------------------
+php_errors.log
+
+#-------------------------
+# User Guide Temp
+#-------------------------
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
 
-#codeigniter 3
+#-------------------------
+# Optional (CI3 old logs if any)
+#-------------------------
 application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
-/vendor/

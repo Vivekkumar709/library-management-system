@@ -1,0 +1,187 @@
+USE CASES
+
+//======= USECASES FOR STATUS CHANGE ===========================
+//https://chat.deepseek.com/a/chat/s/c6f79d72-b61e-483c-9c79-fe7416f49164
+
+<!-- Will update status, updated_at, and updated_by -->
+<a href="#" class="status_btn"
+   data-id="10"
+   data-tbl="students,users"
+   data-primary-key="id"
+   data-relations='{"users": {"foreign_key": "id", "reference_table": "students", "reference_column": "user_id"}}'
+   data-status="1"
+   data-track-updates="yes">
+   Active
+</a>
+
+<!-- Will update only status field -->
+<a href="#" class="status_btn"
+   data-id="15"
+   data-tbl="products,categories"
+   data-primary-key="id"
+   data-relations='{"categories": {"foreign_key": "id", "reference_table": "products", "reference_column": "category_id"}}'
+   data-status="1">
+   Active
+</a>
+
+<!-- Users table with tracking -->
+<a href="#" class="status_btn"
+   data-id="5"
+   data-tbl="users"
+   data-status="1"
+   data-track-updates="yes">
+   Active
+</a>
+
+<!-- Products table without tracking -->
+<a href="#" class="status_btn"
+   data-id="8"
+   data-tbl="products"
+   data-status="1">
+   Active
+</a>
+
+<!-- Update multiple tables with tracking -->
+<a href="#" class="status_btn"
+   data-id="20"
+   data-tbl="orders,order_items,payments"
+   data-primary-key="id"
+   data-relations='{
+     "order_items": {"foreign_key": "order_id"},
+     "payments": {"foreign_key": "order_id"}
+   }'
+   data-status="1"
+   data-track-updates="yes">
+   Active
+</a>
+
+Step 5: Database Table Structure Examples
+Tables WITH Tracking Support:
+
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    status TINYINT(1) DEFAULT 1,
+    updated_at DATETIME,
+    updated_by INT
+);
+
+CREATE TABLE students (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT,
+    status TINYINT(1) DEFAULT 1,
+    updated_at DATETIME,
+    updated_by INT,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+Tables WITHOUT Tracking Support:
+
+CREATE TABLE categories (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    status TINYINT(1) DEFAULT 1
+    -- No updated_at or updated_by fields
+);
+
+CREATE TABLE products (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    category_id INT,
+    status TINYINT(1) DEFAULT 1,
+    FOREIGN KEY (category_id) REFERENCES categories(id)
+    -- No updated_at or updated_by fields
+);
+
+//============================================================
+
+js clock
+remember me functionality
+
+change thumbnails in entire software
+apply access level in software 
+Not working
+http://localhost:8080/classes/teachers/teacher/edit/38
+Class Schedule link change
+link change
+http://localhost:8080/classes/classAttendance/1
+classAssignments
+http://localhost:8080/employee/assign_role_to_user/1
+ 
+$this->thumbnails = [
+                ['title' => 'Dashboard', 'url' => site_url('dashboard')],
+                ['title' => 'Students', 'url' => site_url('students')],
+                ['title' => 'Category-wise Report', 'url' => '', 'active' => true]
+        ];
+$this->thumbnails = [
+                ['title' => 'Teachers List', 'url' => site_url('teachers')],
+                ['title' => 'Add Teacher', 'url' => '', 'active' => true]
+        ];
+
+$this->thumbnails = [
+	   // ['title' => 'Class Schedules', 'url' => site_url('class-schedules')],
+		['title' => 'Class Schedules', 'url' => '', 'active' => true]
+];
+
+$this->thumbnails = [
+                ['title' => 'Students', 'url' => site_url('students')],
+                ['title' => 'Add Students', 'url' => '', 'active' => true]
+        ];
+		
+//students/documents
+
+delete button
+
+https://platform.cyberpersons.com/support/listTickets
+
+//GIT INSATALLATION 
+
+git --version
+which git
+ssh-keygen -t rsa -b 4096 -C "aditiguptanew91@gmail.com"
+passphare:- 
+ssh-keygen -t rsa -b 4096
+cat ~/.ssh/id_rsa.pub
+
+Agent pid 217138
+Identity added: /root/.ssh/id_rsa (root@panel.motileinfotech.com)
+
+git config --global user.name "Aditi Gupta"
+git config --global user.email "aditiguptanew91@gmail.com"
+
+mkdir motileinfotech
+cd motileinfotech
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin git@github.com:username/repository.git
+git push -u origin main
+
+
+git config --global user.name "Aditi"
+git config --global user.email "aditiguptanew91@gmail.com"
+
+ssh-keygen -t ed25519 -C "aditiguptanew91@gmail.com"
+
+ssh-keygen -t ed25519 -C "aditiguptanew91@gmail.com"
+
+git clone root@147.79.68.249:/home/git/motileinfotech.git
+
+mkdir motileinfotechwebsite
+cd motileinfotechwebsite
+git init
+
+git remote add origin git@github.com:aditiguptanew91/repository.git.
+
+git remote set-url origin git@github.com:aditiguptanew91/motileinfotech.git
+
+git pull origin main
+git push origin main (TO PUSH)
+git pull origin main (PULL CHANGES FROM SERVER TO LOCAL MACHINE)
+
+
+
+
+
+
+ 
+		
+		
+		
